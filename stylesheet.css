@@ -100,6 +100,12 @@ papertitle {
   color: #1772d0;
 }
 
+studentname {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #034a91;
+}
+
 journaltitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;

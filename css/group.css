@@ -1,0 +1,1302 @@
+/* --------------------------------------------------------------
+
+   CSS Framework
+   Web Design & Development by Studio 24 Ltd
+   www.studio24.net - (0870) 241 6159
+
+   * Screen & Projection Styles *
+
+   This is the main CSS-file for the framework.
+   Include this in the <head> of every page.
+
+-------------------------------------------------------------- */
+/* --------------------------------------------------------------
+
+   CSS Framework
+   Web Design & Development by Studio 24 Ltd
+   www.studio24.net - (0870) 241 6159
+
+   * Typography Styles *
+
+   This is the typography CSS-file for the framework.
+   Include this in the layout.css file.
+
+-------------------------------------------------------------- */
+
+/* =BASIC TYPOGRAPHY
+-------------------------------------------------------------- */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: #333;
+    line-height: 1.125em;
+}
+
+p, ul, ol, dl, table, blockquote, pre, code  {
+	font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.25em;
+	margin-bottom: 0.5em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+td ul, td ol, td p {
+	font-size: 1em;
+}
+
+td table, td pre, dd pre, dd table {
+	font-size: 100%;
+}
+
+/* =LINKS
+-------------------------------------------------------------- */
+
+a:link, a:focus, a:active, a:visited {
+	color: #003c79;
+	text-decoration: underline;
+}
+
+a:active { outline: none; }
+
+a:hover {
+	text-decoration: underline;
+	color: #003366;
+	outline: none;
+}
+
+/* =LISTS
+-------------------------------------------------------------- */
+
+ul {
+	list-style-type: square;
+	margin: 0 0 1em 2em;
+}
+
+ul.disc {
+	list-style-type: disc;
+}
+
+ul ul, ol ol, ol ul, ul ol, ul pre, ol pre, dl dl {
+	font-size: 100%;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	margin-left: 1.25em;
+}
+
+/* last two added 19.9.08 hvs */
+ul ul ul, ol ol ol, ul li p, ol li p, dl p, dl ul, dl ol {
+	font-size: 100%;
+}
+
+
+ol {
+	list-style-type: decimal;
+	margin: 0 0 1em 2.4em;
+}
+
+ol.alpha, ol.letter {
+	list-style-type: lower-alpha;
+}
+
+ol.roman {
+	list-style-type: lower-roman;
+}
+
+ul li.link {
+	list-style-type: none;
+	padding-left: 1.5em;
+	position: relative;
+	left: -1.5em;
+}
+
+ul li.up {
+	background: url(../images/icon-arrow-nav-primary-up.gif) no-repeat 4px 50%;
+}
+
+ul li.right {
+	background: url(../images/icon-arrow-nav-primary.gif) no-repeat 0 50%;
+}
+
+ul li.down {
+	background: url(../images/icon-arrow-nav-primary-down.gif) no-repeat 4px 50%;
+}
+
+dl {
+	margin: 0 0 1em 2em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 0.5em 0 ;
+}
+
+/* =OTHER TEXT ELEMENTS
+-------------------------------------------------------------- */
+
+sup {
+	font-size: 0.85em;
+	position: relative;
+	bottom: 0.5em;
+}
+
+sub {
+	font-size: 0.85em;
+	position: relative;
+	top: 0.5em;
+}
+
+blockquote {
+	padding: 0.5em 1em 0 1em;
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+
+blockquote p {
+	margin-left: 2.5em;
+	margin-right: 2em;
+}
+
+blockquote span.left {
+	left: 0;
+	top: 0;
+	padding-top: 0.35em;
+}
+
+blockquote span.right {
+	right: 0;
+	bottom: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em, var {
+	font-style: italic;
+}
+
+pre {
+	padding: 0.5em 1em 0 1em;
+	margin: 0 0 1em 0;
+	font-family: Monaco, monospace;
+	overflow: auto;
+}
+
+tt, code, samp {
+	font-family: 'Andale Mono', 'courier new', monospace;
+	font-size: 1em;
+	line-height: 1.125em;
+}
+
+/* =TABLES
+-------------------------------------------------------------- */
+
+table.data {
+	margin: 0 0 1em 0;
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	width: 100%;
+}
+
+table.data th, table.data td {
+	padding: 0.3em 0.4em 0.2em 0.4em;
+	border-bottom:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+
+table.data td.heading {
+	font-weight: bold;
+	width: 160px;
+}
+
+table.data th {
+	font-weight:bold;
+}
+
+table.data .alt, table.data tr.tint {
+	background: #F5F5F5;
+}
+
+/*standard table */
+
+table {margin: 0 0 1em 0;}
+
+table th, table td {padding: 0.3em 0.4em 0.2em 0.4em;}
+
+table th {font-weight:bold;}
+
+
+div#skip {
+	display: none;
+}
+
+div#container {
+	background: #fff;
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+}
+
+img.ucam {
+	padding: 0.7em 1em 0 1em;
+	width:100%;
+}
+
+/*hvs 14.4*/
+div#dept-title {
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+div#navtabs {
+	background: #d3d3b1;
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	line-height: 1em;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 20px 0 20px;
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+}
+
+div#header {
+	height:70px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding:0;
+	background: #fff;
+	/*min-width: 734px;*/
+	max-width: 1254px;
+
+	/*border-bottom: 1px solid #cdc5bc;*/
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+}
+
+div#branding {
+	float: left;
+	width: 50%;
+	max-width: 224px;
+}
+
+div#content {
+	float: left;
+	width: 100%;
+	padding-bottom: 1em;
+}
+
+
+div#content-primary {
+	float: left;
+	padding-right: 1em;
+	}
+
+.dept div#content-primary {
+	margin: 1em 0 0 0;
+}
+
+.dept div#content-primary h1 {
+	margin: 0 0 0.5em 0; padding: 0;
+}
+
+div#content-primary a {
+	text-decoration: none;
+}
+
+div#content-primary a:hover {
+	text-decoration: underline;
+}
+
+/*following three styles are to make links in text panel show up better*/
+div#content-primary a:link.textlink {text-decoration:none; border-bottom: 1px #999 solid;}
+
+div#content-primary a:hover.textlink {text-decoration:none; color: #cf5200;}
+
+div#content-primary a:visited.textlink {text-decoration:none; border-bottom: 1px #999 solid;}
+
+div#content-secondary {
+	float: right;
+	background: #f1f5ff;
+	border-left: 1px solid #ccc;
+	width: 35%;
+}
+
+.dept div#content-secondary, .dept.three-col.nosub div#content-secondary {
+	border-top: 1px solid #ccc;
+}
+
+.dept.three-col div#content-secondary  {
+	border: 0;
+}
+
+/* Set one column layout
+-------------------------------------------------------------- */
+
+body.one-col div#content-secondary, body.one-col ul#nav-primary {
+	display: none;
+}
+
+body.one-col div#content-primary {
+	width: 100%;
+}
+
+/* Set two and three column layouts
+-------------------------------------------------------------- */
+
+/* added by DMR (Studio24) 01.02.08 */
+body.alt div#content-primary {
+	width: 80%;
+}
+/* added by DMR (Studio24) 01.02.08 */
+body.alt div#content-secondary {
+	width: 20%;
+}
+
+body.two-col div#content, body.three-col div#content {
+	float: right;
+	width: 76%;
+}
+
+body.two-col ul#nav-primary, body.three-col ul#nav-primary {
+	float: left;
+	width: 22%;
+	padding-left: 0;
+}
+
+body.two-col div#content-primary {
+	width: 100%;
+}
+
+body.two-col div#content-secondary  {
+	display: none;
+}
+
+body.three-col div#content-primary {
+ 	width: 63.6%;
+	padding-right: 2%;
+}
+
+body.three-col div#content-secondary {
+	float: right;
+	width: 34.4%;
+	padding-left: 0;
+}
+
+
+/* =SITE-TOOLS
+-------------------------------------------------------------- */
+
+.dept div#site-search {
+	padding: 0.5em 0 0 0;
+}
+
+div#site-search ul {
+	padding:5px;
+	margin: 0;
+	list-style-type: none;
+	}
+
+div#site-search ul li {
+	float: right;
+	padding: 0 7px 0 7px;
+	background: url(../images/divider-site-tools-small.gif) no-repeat 100% 50%;
+}
+
+div#site-search ul li.last {
+	background: none;
+	padding-right: 15px;
+}
+
+div#site-search ul li a {
+	color:#036;
+	text-decoration:none;
+}
+div#site-search ul li a:hover {
+	color:#c60;
+}
+div#site-search {
+	float:none;
+	width:auto;
+	height:auto;
+	padding:10px 0 5px 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div#site-search form {
+	text-align:right;
+}
+
+/* =NAV-PRIMARY
+-------------------------------------------------------------- */
+
+ul#nav-primary {
+	list-style-type: none;
+	border-top: 2px solid #CCC;	
+	border-bottom: 1px solid #CCC;	
+	margin: 0.15em 0 50px 0;
+	clear: both;
+	width: 100%;
+	background: #f1f5ff;
+	font-weight: bold;
+}
+
+ul#nav-primary li {
+	border-top: 1px solid #CCC;
+	margin: 0 1px 0 0;
+	padding:0;
+}
+
+/* added by DMR (Studio24) 24.01.08 */
+ul#nav-primary li.title {
+	border-top: none;
+	font-weight: bold;
+	padding: 0.6em 20px 0.45em 10px;
+	background: #666;
+	color: white;
+}
+
+ul#nav-primary li a {
+	border-top: 1px solid white;
+	padding: 0.2em 20px 0.2em 10px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+
+ul#nav-primary li a:hover {
+	color:#c60;
+}
+
+/* =nav-primary sub-nav
+-------------------------------------------------------------- */
+
+ul#nav-primary li.active {
+	background:#fff;
+}
+
+ul#nav-primary li.active a {
+	border: none;
+	color:#c60;
+	background:#fff;
+}
+
+ul#nav-primary li.active ul,
+ul#nav-primary li ul {
+	font-size: 1em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0.3em 0 0 0;
+}
+
+ul#nav-primary li.active ul li,
+ul#nav-primary li ul li {
+	border: none;	
+	border-top: solid #E8F0FF 1px;
+	padding: 4px 0 4px 0;
+}
+
+/* Style for unselected secondary nav link */
+ul#nav-primary li.active ul li a,
+ul#nav-primary li.active ul li a:hover,
+ul#nav-primary li ul li a,
+ul#nav-primary li ul li a:hover {
+	padding: 0 20px 0 30px;
+	border: none;
+	color: #036;
+	font-weight: normal;
+}
+
+/* Style for selected secondary nav link */
+ul#nav-primary li.active ul li.active a,
+ul#nav-primary li.active ul li.active a:hover,
+ul#nav-primary li ul li.active a,
+ul#nav-primary li ul li.active a:hover {
+	background: url(../images/icon-arrow-nav-primary.gif) no-repeat 10px 5px;
+	color: #c60;
+	font-weight: bold;
+}
+
+ul#nav-primary li.active ul li a:hover,
+ul#nav-primary li ul li a:hover {
+	color: #c60;
+	text-decoration: underline;
+}
+
+
+/* =NAV-TABBED
+-------------------------------------------------------------- */
+
+ul#nav-tabbed {
+	list-style-type: none;
+	margin: 1em 0 2em 0;
+	padding: 0;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+}
+
+ul#nav-tabbed li {
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+
+ul#nav-tabbed li a {
+	color: white;
+	background:#06c url(../images/bg-tab-right.gif) no-repeat 100% 0;
+	display: block;
+	padding: 0.6em 20px 0.45em 20px;
+	position: relative;
+	text-decoration: none;
+}
+
+ul#nav-tabbed.az li a {
+	color: white;
+	padding: 0.6em 9px 0.45em 9px;
+	font-size: 0.9em;
+}
+
+ul#nav-tabbed li a span {
+	background: url(../images/bg-tab-left.gif) no-repeat 0 0;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+ul#nav-tabbed li a:hover {
+	text-decoration: none;
+	background: #036 url(../images/bg-tab-right-over.gif) no-repeat 100% 0;
+}
+
+ul#nav-tabbed li a:hover span {
+	background: url(../images/bg-tab-left-over.gif) no-repeat 100% 0;
+}
+
+ul#nav-tabbed li.active a {
+	background: #b2ccff url(../images/bg-tab-right-active.gif) no-repeat 100% 0; 
+	color: #000;
+	font-weight: bold;
+}
+
+ul#nav-tabbed li.active a span {
+	background: url(../images/bg-tab-left-active.gif) no-repeat 100% 0;
+}
+
+/* =BREADCRUMB
+-------------------------------------------------------------- */
+
+ul#nav-breadcrumb {
+	overflow: hidden;
+	margin:0;
+	padding:  0.5em 0 1em 0;
+	list-style-type: none;
+	color: #666;
+	font-size: 0.65em;
+	width:100%;
+}
+
+
+ul#nav-breadcrumb li {
+	float: left;
+	padding: 0 6px 0 6px;
+	background: url(../images/icon-arrow-nav-breadcrumb.gif) no-repeat 0 50%;
+	white-space: nowrap;
+}
+
+ul#nav-breadcrumb li.first {
+	padding-left: 21px;
+	background: url(../images/icon-home.gif) no-repeat 0 0;
+}
+
+ul#nav-breadcrumb li.last {
+	/*background: none;*/
+}
+/*
+ul#nav-breadcrumb li.first a {
+	color: #cf5200;
+}
+*/
+ul#nav-breadcrumb a, ul#nav-breadcrumb a:hover {
+	text-decoration: none;
+}
+
+/* =SITE-INFO
+-------------------------------------------------------------- */
+
+ul#site-info {
+	overflow: hidden;
+	margin: 0;
+	clear: both;
+	width: 100%;
+	list-style-type: none;
+	border-top: 2px solid #9c9;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: 0.7em;
+}
+
+ul#site-info li {
+	float: left;
+}
+
+ul#site-info li a{
+	text-decoration:none;
+}
+
+
+ul#site-info li.link {
+	float: right;
+	padding: 0 10px 0 10px;
+	background: url(../images/divider-site-tools-small.gif) no-repeat 100% 50%;
+}
+
+ul#site-info li.last {
+	background: none;
+	padding-right: 0;
+}
+
+/* =RESPONSIVE DESIGN
+-------------------------------------------------------------- */
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+@media (max-width:827px){
+	body[class*="-col"] div#content-primary, body[class*="-col"] div#content-secondary, div#content-primary, div#content-secondary{
+		width:100%;
+		border-left: none;
+	}
+	body[class*="-col"] div#content {
+		width: 100%;
+	}
+	div#container{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ul#nav-primary, body[class*="-col"] ul#nav-primary{
+		width:100%;
+		margin: 0px;
+		list-style-position: inside;
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
+		order: 3;
+	}
+	div#content,div#content-primary{
+		-webkit-box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-ms-flex-order: 1;
+		-webkit-order: 1;
+		order: 1;
+	}
+	div#content-secondary{
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
+	}
+	ul#site-info{
+		-webkit-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-ms-flex-order: 4;
+		-webkit-order: 4;
+		order: 4;
+	}
+}
+
+@media (max-width:560px){
+	body {
+		padding:0px;
+	}
+	div#site-search{
+		width:50%;
+		float:right;
+	}
+	div#site-search ul{
+		display:none;
+	}
+	div#site-search form label{
+		display:none;
+	}
+	div#site-search form #search-term{
+		width:70%;
+	}
+	div#branding{
+		width:50%;
+	}
+	div.ucampas-toc{
+		display:none;
+	}
+	th.name,td.name{
+		min-width:12em;
+	}
+	dl.menu {
+		width:100%;
+	}
+	.dept div#header, div#header, div#dept-title, div#container {
+		border:0px solid #ffffff;
+	}
+}
+
+html {
+  overflow-y: scroll;
+}
+
+a.grey {
+  color: #333;
+}
+
+span.conference {
+  font-style: italic;
+}
+
+span.paratitle {
+    font-weight: bold;
+}
+
+div.leftalign {
+  width: 100%;
+}
+
+div.rightalign {
+  text-align: right;
+  width: 100%;
+}
+
+div.leftalign p {
+  margin-bottom: 3em;
+}
+
+div.rightalign p {
+  margin-bottom: 3em;
+}
+
+div#content-primary div.leftalign img.fb-img {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.fit {
+    margin: 0;
+    padding: 0;
+}
+
+div.float-container {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.column-left {
+    width: 48%;
+    min-width: 330px;
+    float: left;
+    padding-right: 1em;
+}
+
+div.column-right {
+    width: 48%;
+    min-width: 330px;
+    float: right;
+    padding-left: 1em;
+}
+
+div.after-columns {
+    clear: both;
+}
+
+div.content-snippets {
+  float: right;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+div.content-snippets a {
+  text-decoration: none;
+}
+
+div.snippet-title {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+table.grey tbody tr th,
+table.grey tbody tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.rssdog {
+  margin: 0px;
+}
+
+table.rssdog td {
+  font-size: .75em;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+hr.style-divider {
+  border: 1px solid #eee;
+}
+
+div.style-entry h2 a {
+  float: right;
+}
+
+/* --------------------------------------------------------------
+
+   CSS Framework
+   Web Design & Development by Studio 24 Ltd
+   www.studio24.net - (0870) 241 6159
+
+   * Content Styles *
+
+   This is the content CSS-file for the framework.
+   Include this in the layout.css file.
+
+-------------------------------------------------------------- */
+	
+/* =TYPOGRAPHY
+-------------------------------------------------------------- */	
+
+h1 {
+	padding-top: 0.7em;
+}
+
+h2 {
+	padding-top: 0.9em;
+}
+
+/*hvs 14.4*/
+div#dept-title h1 {
+	margin: 0;
+	padding: 0.2em 0;
+	line-height: normal;
+	font-family: verdana, arial, helvetica, sans serif;
+	font-size: 1.4em;
+	font-weight:normal;
+	color: #000;
+}
+
+div#dept-title h1 a {
+	color: #000;
+	text-decoration:none;
+}
+
+/*hvs 25.4*/
+div#dept-title h2 {
+	margin: 0;
+	padding: 0 0 0.5em 0;
+	line-height: normal;
+	font-family: verdana, arial, helvetica, sans serif;
+	font-size: 1.1em;
+	font-weight:normal;
+	color: #000;
+}
+
+/*for use with the optional global tabbed navigation bar*/
+
+div#navtabs ul {
+	float:left;
+	list-style: none;
+	margin:0;
+	padding: 0px;
+	}
+div#navtabs li {
+	display: block;
+	float: left;
+	}
+div#navtabs a {
+	display: block;
+/*
+	float: left;
+*/
+	color: #336;
+	text-decoration: none;
+	background-color:#d3d3b1;
+	padding:4px 10px 4px 10px;
+	border-right: 1px solid #9c9;
+}
+div#navtabs a:hover {
+	display: block;
+	float: left;
+	color: #000;
+	text-decoration: none;
+	background-color: #EDEEEC;
+}
+div#navtabs a.first {
+	border-left: 1px solid #9c9;
+	border-right: 1px solid #9c9;
+}
+div#navtabs a.current {
+	background-color: #9c9;
+}
+/* Commented backslash hack hides rule from IE5-Mac \*/	
+div#navtabs li a { float: none }
+/* End IE5-Mac hack */
+/*end of tabbed nav bar*/
+
+	
+div#sub-brand {
+	padding-top: 0.6em;
+	padding-bottom: 0.8em;
+	margin: 0;
+	width: 100%;
+	border-bottom: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}	
+	
+p.section {
+	float: left;
+	color: #cf5200;
+	font-size: 1.125em;
+	line-height: 1.125em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.flash {background: #fc3;
+padding: 0 2px;}
+
+body.secondary div#content-primary p {padding-right: 4%;}	
+
+div#tint {background:#dfdfdf; padding:1em; width:80%; margin: 0.5em auto;}
+
+/* =IMAGES
+-------------------------------------------------------------- */
+
+img {
+	display: block;
+}
+
+#branding img {
+	float: left;
+}
+
+div#content-primary img.centre {
+	display: block;
+	float: none;
+	border: 0;
+	margin: 1em auto;
+	padding: 0;
+}
+
+div#content-primary img.screenshot, body.screenshots div#content-primary p img {
+	display: block;
+	float: none;
+	border: 1px solid #dbd7cc;
+	margin: 2em;
+	padding: 0;
+}
+
+div#content-primary p img.inline, div#content-primary li img.inline {float:none; display:inline; margin: 0 0 -0.2em 0; padding: 0 0.2em; border:1px solid #FFF;}
+
+p.dept img {
+	float: right;
+	padding-left: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+div#content-primary p img, div#content-primary img.right {
+	float: right;
+	border: 5px solid #dbd7cc;
+	margin-left: 20px;
+	margin-bottom: 1.125em;
+	display: inline;
+	clear: right;
+}
+
+div#content-primary p img.left, div#content-primary p img.aleft {
+	float: left;
+	clear: left;
+	margin-left: 0;
+	margin-right: 20px;
+	margin-bottom: 0.5em;
+}
+
+div#content-primary p img.text {
+	float: left;
+	clear: left;
+	margin: 0;
+	padding:0 12px 12px 0;
+	border:0;
+}
+
+/* =LISTS
+-------------------------------------------------------------- */
+
+/* =home page menus
+-------------------------------------------------------------- */
+
+/* IE6 margin/hover bug fix */
+div.menu-wrapper, div.spotlight-wrapper {
+	width: 100%;
+	float: left;
+}
+
+dl.menu {
+	float: left;
+	margin: 0.75em 3.4% 0 0;
+	width: 46.5%;
+	background:url(../images/bg-home-menu-top.gif) repeat-x 0 100%;
+	padding-bottom: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+dl.menu dt {
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: normal;
+	padding: 0.4em 15px 0.3em 0.4em;
+	color: #c60;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+dl.menu dd {
+	margin: 0;
+	padding-top: 1px;
+	padding-bottom: 0;
+	background:url(../images/bg-home-menu-top.gif) repeat-x 0 0;
+	font-size: 1.2em;
+	line-height: 1.1em;
+	font-weight: bold;
+}
+
+div#content-primary dl.menu dd a {
+	display: block;
+	padding: 0.6em 15px 0.45em 37px;
+	background: white url(../images/icon-arrow-home-menu.gif) no-repeat 8px 0.75em;
+	text-decoration: none;
+}
+
+div#content-primary dl.menu dd a:hover {
+	background: #f3f7ff url(../images/icon-arrow-home-menu-orange.gif) no-repeat 8px 0.75em;
+	text-decoration: none;
+}
+
+div#content-primary dl.menu dt.sub {margin-top: 0.8em}
+
+div#content-primary ul li ul {margin: 0 0 0.5em 1em;}
+
+/* =content secondary list/menu settings
+-------------------------------------------------------------- */
+
+div#content-secondary dl, div#content-secondary dd, div#content-secondary ul {margin: 0;}
+
+/* =content-secondary news
+-------------------------------------------------------------- */
+
+dl.news, dl.links {
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #CCC;
+	margin:0 0 1em 0;
+}
+/* for use with rss feed - there is an additional block of styles in rssfeed.css you can either add here or call as an import from layout.css
+-------------------------------------------------------------- */
+
+
+/*for use with manually added news and feature lists
+------------------------------------------------------------------------*/
+
+div#content-secondary #feature, div#content-secondary #news {
+	float:left;
+	padding: 0 0 0 21px;
+	margin: 0.5em 0 ;
+	/* border-bottom: 0.5px solid #CCC;    half pixel??? */
+	display: inline;
+	overflow: hidden;
+	}
+
+div#content-secondary #feature h2, div#content-secondary #news h2 {
+	padding: 0 0 0 0;
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+div#content-secondary #feature h3, div#content-secondary #news h3 {
+	padding: 0 0 0.2em 0;
+	margin: 0;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+div#content-secondary #feature p, div#content-secondary #news p {
+	margin: 0 0 0.5em 0;
+}
+
+div#content-secondary #feature ul, div#content-secondary #news ul {
+        /* float: left;     very odd! */
+	padding: 0.5em 0;
+	margin: 0;
+	padding:0;
+	font-size: 0.8em;
+	list-style:none;
+	display: inline;
+	overflow: hidden;
+}
+
+div#content-secondary #feature ul.bullet, div#content-secondary #news ul.bullet {
+	float: left;
+	padding: 0 0 0.5em 0;
+	margin: 0;
+	padding:0;
+	font-size: 0.7em;
+	list-style:disc inside;
+	display: inline;
+	overflow: hidden;
+}
+
+div#content-secondary #feature li, div#content-secondary #news li {
+	padding: 0.4em 1em 0.2em 0;
+	margin: 0;
+}
+
+div#content-secondary #feature li a, div#content-secondary #news li a, div#content-secondary #feature a, div#content-secondary #news a {text-decoration:none;}
+
+div#content-secondary #feature {border-bottom: 0 solid #ccc;}
+
+div#content-secondary .subhead {
+	font-weight:bold;
+	color: #48605f;
+}
+
+/* =content-secondary links
+-------------------------------------------------------------- */
+
+div#content-secondary dl.links {
+	border-top: 1px solid #e4eaea;	
+	float: left;
+	width: 100%;
+}
+
+div#content-secondary dl.links dt {
+	padding: 0.75em 20px 0.6em 47px;
+	font-size: 1.2em;
+	background: #fff url(../images/icon-quick-links.gif) no-repeat 20px 55%;
+	margin-left: 2px;
+	/*border-top: 1px solid #d3d3b1;
+	text-transform: uppercase;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #48605f;
+}
+
+div#content-secondary dl.section dt {background: #fff  url(../images/icon-section.gif) no-repeat 20px 55%;}
+
+div#content-secondary dl.links dd {
+	border-top: 1px solid #e4eaea;
+	margin-left: 1px;
+}
+
+div#content-secondary dl.links dd a {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 0.1em 20px 0.3em 47px;
+	display: block;
+	height: 100%;
+	background: url(../images/icon-arrow-nav-primary.gif) no-repeat 20px 10.5px;
+	text-decoration: none;
+	color: #333;
+}
+
+div#content-secondary dl.links dd a:hover {
+	text-decoration: none;
+	background: #fff url(../images/icon-arrow-nav-primary.gif) no-repeat 20px 10.5px;
+	color: #063;
+}
+
+/* =ALERT MESSAGES
+----------------------------------------------- */
+
+div.alert {
+	padding: 18px 0 0 52px;
+	margin: 1em 0 1em 0;
+	min-height: 34px;
+}
+
+div.alert h2 {
+	font-size: 1em;
+	line-height: normal;
+	font-weight: bold;
+	padding: 0;
+}
+
+body.home div.alert {margin: 1em 3.4% 1em 0;}
+
+div.warning {
+	border: 1px solid red;
+	background: #FFCCCC url(../images/icon-alert-warning.gif) no-repeat 10px 10px;
+	margin: 0 0 1em 0;
+}
+
+div.normal {
+    border: 1px solid #ffcc66;
+	background: #ffffcc url(../images/icon-alert-normal.gif) no-repeat 10px 10px;
+	margin: 0 0 1em 0;
+}
+
