@@ -89,6 +89,11 @@ strong {
   font-size: 14px;
 }
 
+strong-lite {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12.5px;
+}
+
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
