@@ -121,8 +121,12 @@ name {
   width: 160px;
   height: 160px;
   position: relative;
+
 }
 
+.one img{
+  border: 5px solid #dbd7cc;
+  }
 .two {
   width: 160px;
   height: 160px;
