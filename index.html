@@ -9,7 +9,11 @@
 
   <title>Zhe Jiang &middot; Architecture, Design &amp; Automation</title>
 
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/Inter.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/SourceSerifPro-400.woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="preload" as="image" href="images/zhejiang.jpeg" fetchpriority="high">
   <link rel="icon" type="image/png" href="images/icon.ico">
 </head>
 
@@ -68,7 +72,7 @@
       </div>
 
       <div class="hero__photo">
-        <img alt="Portrait of Zhe Jiang" src="images/zhejiang.jpeg">
+        <img alt="Portrait of Zhe Jiang" src="images/zhejiang.jpeg" fetchpriority="high" decoding="async" width="200" height="200">
       </div>
     </section>
 
@@ -114,6 +118,7 @@
       <ul class="bio">
         <li>
           <span class="bio__role">Academic Faculty</span>
+          <a class="bio__org" data-org="seu" href="https://www.seu.edu.cn/english/main.htm" rel="noopener">Southeast University</a>
           <span class="bio__period">2024&ndash;present</span>
           <span class="bio__where">
             <a href="https://www.seu.edu.cn/english/main.htm" rel="noopener">School of Integrated Circuits</a>,
@@ -128,6 +133,7 @@
 
         <li>
           <span class="bio__role">Postdoctoral Scholar</span>
+          <a class="bio__org" data-org="cambridge" href="https://www.cam.ac.uk" rel="noopener">University of Cambridge</a>
           <span class="bio__period">2021&ndash;2024</span>
           <span class="bio__where">
             <a href="https://www.cl.cam.ac.uk/research/comparch/" rel="noopener">Computer Architecture Group</a>,
@@ -143,6 +149,7 @@
 
         <li>
           <span class="bio__role">Design Engineer</span>
+          <a class="bio__org" data-org="arm" href="https://www.arm.com" rel="noopener">Arm Ltd.</a>
           <span class="bio__period">2020&ndash;2022</span>
           <span class="bio__where">
             Department of Central Engineering, <a href="https://www.arm.com" rel="noopener">Arm</a>, United Kingdom.
@@ -158,6 +165,7 @@
 
         <li>
           <span class="bio__role">Safety Architect</span>
+          <a class="bio__org" data-org="renesas" href="https://www.renesas.com/" rel="noopener">Renesas Electronics</a>
           <span class="bio__period">2018&ndash;2020</span>
           <span class="bio__where">
             Functional Safety Competency Centre (FSCC), <a href="https://www.renesas.com/" rel="noopener">Renesas Electronics</a>, United Kingdom.
@@ -175,6 +183,7 @@
 
         <li>
           <span class="bio__role">PhD Student</span>
+          <a class="bio__org" data-org="york" href="https://www.york.ac.uk" rel="noopener">University of York</a>
           <span class="bio__period">2014&ndash;2018</span>
           <span class="bio__where">
             <a href="https://www.cs.york.ac.uk/rts/" rel="noopener">Real-Time Systems Group</a>,
@@ -227,7 +236,7 @@
   </main>
 
   <script data-goatcounter="https://zhejiang7777.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+          async src="https://gc.zgo.at/count.js"></script>
 
 </body>
 </html>
