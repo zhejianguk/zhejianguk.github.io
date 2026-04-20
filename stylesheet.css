@@ -189,8 +189,6 @@ sub      { bottom: -0.25em; }
 
 ::selection { background: var(--c-mark); color: var(--c-text); }
 
-.mono { font-family: var(--font-mono); font-size: 0.86em; }
-
 /* ---------- Layout shell ------------------------------------------------ */
 .site {
   max-width: var(--max-width);
@@ -312,6 +310,17 @@ sub      { bottom: -0.25em; }
   color: var(--c-soft);
   font-size: 0.85em;
 }
+.topnav__mascot {
+  height: 28px;
+  width: auto;
+  align-self: center;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+@media (max-width: 480px) {
+  .topnav__mascot { height: 22px; }
+}
 .hero__role {
   color: var(--c-muted);
   font-size: 0.98rem;
@@ -326,13 +335,6 @@ sub      { bottom: -0.25em; }
   color: var(--c-accent);
   border-bottom-color: var(--c-accent);
   text-decoration: none;
-}
-
-.hero__lede {
-  font-size: 1.08rem;
-  line-height: 1.6;
-  color: var(--c-text);
-  margin: 0 0 18px 0;
 }
 
 .hero__intro p {
@@ -372,17 +374,6 @@ sub      { bottom: -0.25em; }
   padding: 24px 0 8px 0;
   border-top: 1px solid var(--c-border);
 }
-.section--quiet { border-top: 0; }
-
-.section__kicker {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-soft);
-  margin: 0 0 6px 0;
-}
 .section__title {
   font-family: var(--font-sans);
   font-size: 1.35rem;
@@ -407,55 +398,6 @@ sub      { bottom: -0.25em; }
   vertical-align: 1px;
   white-space: nowrap;
 }
-.chip--outline {
-  background: transparent;
-  border-color: var(--c-rule);
-  color: var(--c-muted);
-}
-.chip--accent {
-  background: var(--c-accent);
-  color: #fff;
-  border-color: var(--c-accent);
-}
-
-/* Research-area pill */
-.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 0 0; }
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: var(--c-text);
-  font-weight: 500;
-  transition: background .15s ease, border-color .15s ease;
-}
-.tag:hover { background: #eef2f7; border-color: #c8d2dc; }
-
-/* ---------- News / timeline -------------------------------------------- */
-.news { list-style: none; margin: 0; padding: 0; }
-.news li {
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 16px;
-  padding: 8px 0;
-  border-bottom: 1px dotted var(--c-rule);
-  font-size: 0.97rem;
-}
-.news li:last-child { border-bottom: 0; }
-.news__when {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--c-soft);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  padding-top: 4px;
-}
-.news__what { color: var(--c-text); }
-.news__what .chip { margin-right: 4px; }
-
 /* ---------- Recruiting callout ----------------------------------------- */
 .callout {
   position: relative;
@@ -493,8 +435,7 @@ sub      { bottom: -0.25em; }
   letter-spacing: 0.01em;
   font-size: 1rem;
 }
-.callout strong       { color: var(--c-news-strong); font-weight: 700; }
-.callout em.year-em   { color: var(--c-news); font-style: normal; font-weight: 700; }
+.callout strong { color: var(--c-news-strong); font-weight: 700; }
 .callout ul {
   margin: 10px 0 0 1.2em;
   padding: 0;
@@ -727,33 +668,6 @@ a.bio__org:focus-visible::before {
   font-variant-numeric: tabular-nums;
 }
 
-/* Quick access links: PDF / arXiv / DOI / Code */
-.pub__links {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 4px 6px;
-  margin-left: auto;
-}
-.pub__link {
-  display: inline-block;
-  padding: 1px 7px;
-  border-radius: 3px;
-  border: 1px solid var(--c-rule);
-  background: var(--c-bg);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--c-muted);
-  text-transform: uppercase;
-}
-.pub__link:hover {
-  background: var(--c-text);
-  color: #fff;
-  border-color: var(--c-text);
-  text-decoration: none;
-}
-
 .pub__badges {
   margin-top: 10px;
   font-family: var(--font-sans);
@@ -776,29 +690,12 @@ a.bio__org:focus-visible::before {
 }
 /* A thin coloured left edge carries the meaning; the rest of the pill stays
    in a neutral surface so the text is the primary visual. */
-.pub__badge--accept {
-  border-left-color: #047857;   /* emerald-700 */
-}
 .pub__badge--award {
   border-left-color: #b45309;   /* amber-700 */
   font-weight: 600;
 }
 .pub__badge--note {
   border-left-color: #1d4ed8;   /* blue-700 */
-}
-
-/* ---------- Selected publications (homepage) --------------------------- */
-.see-all {
-  display: inline-block;
-  margin-top: 12px;
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--c-accent);
-}
-.see-all::after {
-  content: " →";
-  font-family: var(--font-mono);
 }
 
 /* ---------- Group page -------------------------------------------------- */
@@ -910,24 +807,6 @@ a.bio__org:focus-visible::before {
   color: var(--c-text);
   letter-spacing: -0.005em;
 }
-.role-header__count {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--c-soft);
-  letter-spacing: 0.04em;
-}
-
-.subsection-title {
-  font-family: var(--font-sans);
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 36px 0 12px 0;
-  color: var(--c-text);
-  border-top: 1px solid var(--c-border);
-  padding-top: 24px;
-  letter-spacing: -0.005em;
-}
-
 .alumni { list-style: none; margin: 0; padding: 0; }
 .alumni li {
   padding: 12px 0;
@@ -1047,7 +926,6 @@ a.bio__org:focus-visible::before {
 
 /* ---------- Helpers ----------------------------------------------------- */
 .note { color: var(--c-soft); font-size: 0.9rem; font-family: var(--font-sans); }
-.highlight { background: var(--c-mark); padding: 0 2px; }
 
 /* ---------- Responsive -------------------------------------------------- */
 @media (max-width: 760px) {
@@ -1069,8 +947,6 @@ a.bio__org:focus-visible::before {
   .topnav__links { gap: 16px; font-size: 0.86rem; }
 
   .site { padding: 0 18px 48px 18px; }
-
-  .news li { grid-template-columns: 76px 1fr; gap: 12px; }
 
   .mentor-list { gap: 12px; }
   .mentor-card {
@@ -1101,6 +977,4 @@ a.bio__org:focus-visible::before {
     margin: 0 auto;
   }
   .mentor-card__body { width: 100%; text-align: left; }
-  .news li { grid-template-columns: 1fr; }
-  .news__when { padding-top: 0; }
 }
