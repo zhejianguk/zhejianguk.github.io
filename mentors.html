@@ -1,209 +1,154 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Zhe Jiang</title>
-
-  <meta name="author" content="Zhe Jiang">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Zhe Jiang">
+  <meta name="description" content="Mentors of Zhe Jiang.">
+
+  <title>Mentors &middot; Zhe Jiang &middot; Architecture, Design &amp; Automation</title>
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.ico">
 </head>
-
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Mentors</name>
-                  </p>
-                  <a href="./index.html"> <-- Home </a>
-                </td>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <nav class="topnav" aria-label="Primary">
+    <div class="topnav__inner">
+      <div class="topnav__brand">
+        <a href="./index.html">Zhe&nbsp;Jiang</a>
+        <span class="topnav__alias" aria-label="English name: Hugo"></span>
+      </div>
+      <div class="topnav__links">
+        <a href="./index.html">About</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./group.html">Group</a>
+        <a href="./mentors.html" class="is-active">Mentors</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=V5e-7hcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" rel="noopener">Scholar</a>
+        <a href="mailto:zhejiang.arch@gmail.com">Email</a>
+      </div>
+    </div>
+  </nav>
 
-  <p> I am blessed to be supervised by kind and experienced mentors during my career life, who taught me not only
-    technically but also mentally. I will also teach my students like them. Below is a brief introduction of my mentors:
-  </p>
+  <main class="site">
 
+    <header class="page-header">
+      <h1>Mentors</h1>
+      <p>I have been blessed to be supervised by kind and experienced mentors throughout my career, who taught me not only technically but also personally. I aspire to mentor my own students in the same way.</p>
+    </header>
 
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
+    <ul class="mentor-list">
 
-
-      </td>
-      <!-- <heading>Publications </heading> -->
-      <!-- Mentor one  -->
-      <tr onmouseout="sr_start()" onmouseover="sr_stop()">
-
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <img src='images/tim.png'>
-          </div>
-          <script type="text/javascript">
-            function sr_start() {
-              document.getElementById('sr_image').style.opacity = "1";
-            }
-
-            function sr_stop() {
-              document.getElementById('sr_image').style.opacity = "0";
-            }
-            font_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <papertitle><a href="https://www.cl.cam.ac.uk/~tmj32/">Prof. Timothy M. Jones</a></papertitle>
-          <br>
-          <p></p>
-          <p> Prof. Timothy M. Jones is a Professor at the University of Cambridge Computer Laboratory, as well as
-            Fellow and 1956 College Lecturer at Gonville and Caius college where he is joint Director of Studies (DoS)
-            for Computer Science. Tim's research focuses on extracting the many different forms of parallelism from
-            applications (e.g. thread-level, data-level, memory-level) to increase performance and address
-            energy-efficiency and reliability challenges within compilers, binary translators and microarchitectures.
+      <li class="mentor-card">
+        <img class="mentor-card__photo" src="./images/tim.png" alt="Timothy M. Jones">
+        <div class="mentor-card__body">
+          <h2 class="mentor-card__name">
+            <a href="https://www.cl.cam.ac.uk/~tmj32/" rel="noopener">Prof. Timothy M. Jones</a>
+          </h2>
+          <p class="mentor-card__role">Postdoctoral mentor</p>
+          <p class="mentor-card__period">2021&ndash;2024 &middot; University of Cambridge</p>
+          <p class="mentor-card__text">
+            Prof. Timothy M. Jones is a Professor at the University of Cambridge Computer Laboratory,
+            as well as a Fellow and 1956 College Lecturer at Gonville and Caius College, where he is
+            joint Director of Studies (DoS) for Computer Science. Tim's research focuses on
+            extracting the many forms of parallelism present in applications (e.g., thread-level,
+            data-level, memory-level) to increase performance and to address energy-efficiency and
+            reliability challenges within compilers, binary translators and microarchitectures.
           </p>
-          <p> Tim has been my mentor (2021 - 2024) throughout my postdoctoral research in processor architecture and
-            security, offered valuable insights and guidance as I investigate fundamental concepts and stay abreast of
-            emerging trends in these areas.</p>
-        </td>
-      </tr>
+          <p class="mentor-card__text">
+            Tim was my mentor throughout my postdoctoral research in processor architecture and
+            security, offering valuable insights and guidance as I investigated fundamental concepts
+            and stayed abreast of emerging trends in these areas.
+          </p>
+        </div>
+      </li>
 
-      <!-- Mentor two  -->
-      <tr onmouseout="sr_start()" onmouseover="sr_stop()">
+      <li class="mentor-card">
+        <img class="mentor-card__photo" src="./images/dayu.jpeg" alt="Dayu Shi">
+        <div class="mentor-card__body">
+          <h2 class="mentor-card__name">
+            <a href="https://www.linkedin.com/in/dayu-shi-986991142/" rel="noopener">Dr. Dayu Shi</a>
+          </h2>
+          <p class="mentor-card__role">Industry mentor</p>
+          <p class="mentor-card__period">2020&ndash;2022 &middot; Arm Ltd.</p>
+          <p class="mentor-card__text">
+            Dr. Dayu Shi is a Principal Architect at Arm Ltd. and has over 15 years of experience
+            in electronic-system and IC design. During his tenure at Arm, he has held various
+            leadership roles &mdash; including product lead, technical lead, design lead and
+            security lead &mdash; for IC design projects spanning a wide range of applications,
+            from IoT devices to mobile phones and servers. His expertise encompasses
+            electronic-system and computer architecture, IC front-end micro-architecture design,
+            IC hardware security, and IC product management.
+          </p>
+          <p class="mentor-card__text">
+            Dayu was my mentor while I worked at Arm, providing valuable guidance in SoC
+            (micro-)architecture and design automation, helping me to gain a deeper understanding
+            of real-world industry challenges and best practices.
+          </p>
+        </div>
+      </li>
 
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <p class="fit"><img class="left" src="./images/dayu.jpeg" alt="Paul" width="150" /></p>
-          </div>
-          <script type="text/javascript">
-            function sr_start() {
-              document.getElementById('sr_image').style.opacity = "1";
-            }
+      <li class="mentor-card">
+        <img class="mentor-card__photo" src="./images/rabih.jpg" alt="Rabih ah">
+        <div class="mentor-card__body">
+          <h2 class="mentor-card__name">
+            <a href="https://www.linkedin.com/in/rabih-ah-25b20a228/" rel="noopener">Mr. Rabih ah</a>
+          </h2>
+          <p class="mentor-card__role">Industry mentor</p>
+          <p class="mentor-card__period">2018&ndash;2020 &middot; Renesas Electronics</p>
+          <p class="mentor-card__text">
+            Mr. Rabih ah is a Senior Manager at Renesas Electronics with more than 30 years of
+            experience in architecture, design and verification. He has led the development of
+            innovative automotive products that are now widely used by industry leaders such as
+            Bosch and BMW. His deep expertise in IC architecture and verification ensures that
+            these products meet stringent safety and performance standards.
+          </p>
+          <p class="mentor-card__text">
+            Rabih was my mentor while I worked at Renesas, sharing essential strategies for
+            anticipating and addressing potential safety challenges in hardware design and
+            enhancing my ability to deliver high-quality, safety-focused designs.
+          </p>
+        </div>
+      </li>
 
-            function sr_stop() {
-              document.getElementById('sr_image').style.opacity = "0";
-            }
-            font_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <papertitle><a href="https://www.linkedin.com/in/dayu-shi-986991142/">Dr. Dayu Shi</a></papertitle>
-          <br>
-          <p></p>
-          <p> Dr. Dayu Shi is a Principal Architect at Arm Ltd. and has over 15 years of experience in electronic system
-            and IC design. During his tenure at Arm, he has held various leadership roles, including product lead,
-            technical lead, design lead, and security lead, for IC design projects spanning a wide range of
-            applications, from the IoT to mobile phones and servers. His expertise encompass electronic system and
-            computer architecture, IC front-end microarchitecture design, IC hardware security, and IC product
-            management. </p>
-          <p> Dayu has been my mentor (2020 - 2022) while I worked at ARM, provided valuable guidance in SoC
-            (micro-)architectures and design automation, helping me gain a deeper understanding of real-world industry
-            challenges and best practices.</p>
-        </td>
-      </tr>
+      <li class="mentor-card">
+        <img class="mentor-card__photo" src="./images/neil.jpg" alt="Neil Audsley">
+        <div class="mentor-card__body">
+          <h2 class="mentor-card__name">
+            <a href="https://www.city.ac.uk/about/people/academics/neil-audsley" rel="noopener">Prof. Neil Audsley</a>
+          </h2>
+          <p class="mentor-card__role">PhD supervisor</p>
+          <p class="mentor-card__period">2014&ndash;2018 &middot; University of York</p>
+          <p class="mentor-card__text">
+            Prof. Neil Audsley is a Professor at City, University of London, as well as the Deputy
+            Dean of the School of Science and Technology and Director of the STEM Digital Academy.
+            Neil has had a distinguished research career in real-time embedded systems and has
+            developed many novel approaches and implementation techniques, including predictable
+            hardware, improved system software and system timing analysis. Specific areas of
+            research include high-performance real-time systems and their acceleration on FPGAs;
+            real-time memory architectures; scheduling, timing analysis and worst-case
+            execution-time analysis.
+          </p>
+          <p class="mentor-card__text">
+            Neil was my mentor throughout my doctoral research in real-time embedded systems,
+            giving me indispensable guidance that helped me to develop my research vision,
+            thinking and methodologies, and bringing me into the world of academia.
+          </p>
+        </div>
+      </li>
 
+    </ul>
 
+    <footer class="footer">
+      <div>&copy; Zhe Jiang &middot; School of Integrated Circuits, Southeast University.</div>
+      <div><a href="./index.html">&larr; Home</a></div>
+    </footer>
 
-      <!-- Mentor three  -->
-      <tr onmouseout="sr_start()" onmouseover="sr_stop()">
+  </main>
 
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <img src='images/rabih.jpg'>
-          </div>
-          <script type="text/javascript">
-            function sr_start() {
-              document.getElementById('sr_image').style.opacity = "1";
-            }
-
-            function sr_stop() {
-              document.getElementById('sr_image').style.opacity = "0";
-            }
-            font_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <papertitle><a href="https://www.linkedin.com/in/rabih-ah-25b20a228/">Mr. Rabih ah</a></papertitle>
-          <br>
-          <p></p>
-          <p> Mr. Rabih ah is a Senior Manager at the Renesas Electronics and owns more than 30 years of experience in
-            architecture, deisng, and verification. He has led the development of innovative automotive products now
-            widely used by industry leaders like Bosch and BMW. His deep expertise in IC architecture and verification
-            ensures these products meet stringent safety and performance standards.</p>
-          <p> Rabih has been my mentor (2018 - 2020) while I worked at Renesas, shared essential strategies to
-            anticipate and address potential safety challenges in hardware design, enhancing my ability to deliver
-            high-quality, safety-focused designs.</p>
-
-        </td>
-      </tr>
-
-      <!-- Mentor four  -->
-      <tr onmouseout="sr_start()" onmouseover="sr_stop()">
-
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <img src='images/neil.jpg'>
-          </div>
-          <script type="text/javascript">
-            function sr_start() {
-              document.getElementById('sr_image').style.opacity = "1";
-            }
-
-            function sr_stop() {
-              document.getElementById('sr_image').style.opacity = "0";
-            }
-            font_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <papertitle><a href="https://www.city.ac.uk/about/people/academics/neil-audsley">Prof. Neil Audsely</a>
-          </papertitle>
-          <br>
-          <p></p>
-          <p> Prof. Neil Audsley is a Professor at the City, University of London, as well as the Deputy Dean of School
-            of Science and Technology and Director of STEM Digital Academy. Neil has a successful research career in
-            Real-Time Embedded Systems, he has developed many novel approaches and implementation techniques, including
-            predictable hardware, improved system software and system timing analysis. Specific areas of research
-            include high performance real-time systems and their acceleration on FPGAs; real-time memory architectures;
-            scheduling, timing analysis and worst-case execution time analysis. </p>
-          <p> Neil has been my mentor (2014 - 2018) throughout my doctoral research in real-time embedded systems, gave
-            me indispensable guidance that helped me develop my research vision, thinking, and methodologies, bringing
-            me into the world of academia. </p>
-        </td>
-      </tr>
-
-
-      <table
-        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-
-
-
-          </td>
-
-          </tr>
-
-      </table>
-
-      </p>
-      </td>
-      </tr>
-    </tbody>
-  </table>
-  </td>
-  </tr>
-  </tbody>
+  <script data-goatcounter="https://zhejiang7777.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 
 </body>
+</html>

@@ -1,99 +1,233 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <title>Zhe Jiang - Homepage</title>
-  
-  <meta name="author" content="Zhe Jiang">
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name="author" content="Zhe Jiang">
+  <meta name="description" content="Zhe Jiang &mdash; academic faculty at the School of Integrated Circuits, Southeast University. Research on computer architecture, micro-architectural safety and security, timing-critical systems, and LLM-aided design automation.">
+
+  <title>Zhe Jiang &middot; Architecture, Design &amp; Automation</title>
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.ico">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Zhe Jiang  江哲</name>
-              </p>
-              <p> I am currently an academic faculty at the School of Integrated Circuits, <a href="https://www.seu.edu.cn/english/main.htm">Southeast University</a>, Nanjing, China. I am broadly interested in the architecture, micro-architecture, and design automation for ermerging computing systems, with a particular focus on improving their <strong>instruction/memory-level parallelism</strong>, <strong>safety</strong>, <strong>reliability</strong>, <strong>security</strong>, and <strong>deployment efficiency</strong>.</p>
-              <p> <strong><journaltitle>Recruiting! </journaltitle></strong> Our group has multiple openings of <strong>[Year 2027]</strong> PhD. student, <strong>[Year 2027]</strong> master sudent (ideally starting from the last  year of undergraduate), and <strong>[Year 2026]</strong> research assistant, post-doc fellow and hardware/software engineer for the following projects:
-            <li> (Micro-)architecture for safety-critical OoO processors </li>
-            <li> (Micro-)architecture for light-weight LLM accelerators </li>
-            <li> LLM-aided hardware development </li>
-          </p>
-              <p style="text-align:center">
-                <a href="mailto:zhejiang.arch@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="./group.html"> Group </a> &nbsp/&nbsp
-                <a href="./publications.html"> Publications </a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=V5e-7hcAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
-                <a href="./mentors.html"> Mentors </a>
-                <p>** Please also visit my friend, Prof. Ran Wei's <a href="https://wrwei.github.io/">homepage</a>. We collaborate closely — even his homepage bears a striking resemblance to mine! **</p>
 
-              </p>
-            </td>
-            <td style="padding:7.7%;width:40%;max-width:40%">
-              <a href="#"><img style="width:100%;max-width:100%" alt="profile photo" src="images/zhejiang.jpeg"></a>
-            </td>
-          </tr>
-        </tbody></table>
+  <!-- ============== Top navigation =================================== -->
+  <nav class="topnav" aria-label="Primary">
+    <div class="topnav__inner">
+      <div class="topnav__brand">
+        <a href="./index.html">Zhe&nbsp;Jiang</a>
+        <span class="topnav__alias" aria-label="English name: Hugo"></span>
+      </div>
+      <div class="topnav__links">
+        <a href="./index.html" class="is-active">About</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./group.html">Group</a>
+        <a href="./mentors.html">Mentors</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=V5e-7hcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" rel="noopener">Scholar</a>
+        <a href="mailto:zhejiang.arch@gmail.com">Email</a>
+      </div>
+    </div>
+  </nav>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Short Bio</heading>
-              </p>
-                <li> I am currently an academic faculty working in computer architecture, micro-architectural safety and security, timing-critical systems, and LLM-based design automation. </li>
-                  <p> Formally, I worked as a </p>
+  <main class="site">
 
-                <li> postdoctoral scholar (2021-2024), in the <a href="https://www.cl.cam.ac.uk/research/comparch/">Computer Architecture Group</a>, at the <a href="https://www.cst.cam.ac.uk">Department of Computer Science and Technology</a>, <a href="https://www.cam.ac.uk">University of Cambridge</a>, United Kingdom,
-                    where I worked with <a href="https://www.cl.cam.ac.uk/~tmj32/">Timothy M. Jones</a> and <a href="https://samainsworth.github.io">Sam Ainsworth</a> to explore microarchitectural supports to improve the security and relaibility of out-of-ordering superscalar processors.
-                </li>
-                <p>  </p>
+    <!-- ============== Hero ============================================= -->
+    <section class="hero">
+      <div class="hero__intro">
+        <h1 class="hero__name">Zhe Jiang <span class="cn">江哲</span></h1>
+        <p class="hero__role">
+          Academic Faculty &middot;
+          <a href="https://www.seu.edu.cn/english/main.htm" rel="noopener">School of Integrated Circuits, Southeast University</a>
+          &middot; Nanjing, China
+        </p>
 
-                <li> design engineer (2020-2022) at the Department of Central Engineering, <a href="https://www.arm.com">ARM</a>, United Kingdom,
-                      where I worked on the architecture and micro-architecture for server System-on-Chips (SoC)s. Our team have successfully delivered serval many-core (128/256-core) SoCs featured with <a href="https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-n2">Neoverse processors</a> (<a href="https://www.arm.com/architecture/learn-the-architecture/a-profile">ARM V9</a>), e.g., Genesis (5nm) and Bravo (3nm), for Microsoft's and BytaDance's data centres.
-                </li>
-                  <p>  </p>
+        <p>
+          I lead a research group working on the
+          <strong>architecture, micro-architecture and design automation</strong>
+          of next-generation computing systems, with a focus on improving their
+          <strong>instruction- and memory-level parallelism</strong>,
+          <strong>safety</strong>, <strong>reliability</strong>, <strong>security</strong>,
+          and <strong>deployment efficiency</strong>. Drawing on a decade of experience
+          across academia (Cambridge, York) and industry (Arm, Renesas), my work spans
+          full-stack hardware design &mdash; from individual hardware elements
+          (processors, interconnects, I/Os) to entire System-on-Chips &mdash; and has been
+          adopted in production silicon shipping in automotive and data-centre products.
+        </p>
 
-                <li> safety architect (2018 - 2020) at the Functional Safety Competency Centre (FSCC), <a href="https://www.renesas.com/">Renesas Electronics</a>, United Kingdom,
-                      where I worked on the architecture and safety architecture for automotive micro-controllers. Our team have successfully delivered serval <a href="https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level">ASIL</a>-D micro-controllers for Bosch's and Denso's ECUs, including <a href="https://www.renesas.com/in/en/products/microcontrollers-microprocessors/rh850-automotive-mcus/rh850u2a16-automotive-microcontrollers-features-four-400mhz-cpu-cores-dual-core-lock-step-structure-coming-soon">RH850/U216 (28nm)</a> -- <a href="https://www.renesas.com/us/en/about/press-room/renesas-electronics-accelerates-automotive-ecu-integration-worlds-first-28nm-cross-domain-flash-mcu">the <strong>World's First</strong> 28nm Cross-Domain MCU featuring virtualisation</a>.
-                </li>
-                 <p>  </p>
+        <div class="hero__links">
+          <a href="mailto:zhejiang.arch@gmail.com">Email</a><span class="sep">/</span>
+          <a href="./publications.html">Publications</a><span class="sep">/</span>
+          <a href="./group.html">Group</a><span class="sep">/</span>
+          <a href="./mentors.html">Mentors</a><span class="sep">/</span>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=V5e-7hcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" rel="noopener">Google&nbsp;Scholar</a>
+        </div>
+      </div>
 
-                <li> PhD. student (2014 - 2018) in the <a href="https://www.cs.york.ac.uk/rts/"> Real-Time Systems Group</a>, at the <a href="https://www.cs.york.ac.uk"> Department of Computer Science</a>, <a href="https://www.york.ac.uk"> University of York</a>, United Kingdom, 
-                      where I supervised by <a href="https://scholar.google.com/citations?user=VRCt1_0AAAAJ&hl=en">Neil Audsley</a> to explore the architecture and micro-architecture for real-time Network-on-Chips and Inputs/Outputs (I/Os). <a href=https://etheses.whiterose.ac.uk/22608/1/Thesis_Final_V4.pdf>[Thesis: Real-Time I/O System for Many-core Embedded Systems]</a>.
-                </li>
+      <div class="hero__photo">
+        <img alt="Portrait of Zhe Jiang" src="images/zhejiang.jpeg">
+      </div>
+    </section>
 
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+    <!-- ============== Recruiting / News ================================ -->
+    <section class="section">
+      <div class="callout" role="note" aria-label="Recruiting announcement">
+        <p>
+          <span class="callout__badge">Recruiting</span>
+          <span class="callout__title">We are hiring &mdash; multiple openings.</span>
+          Our group is recruiting
+          <strong>2027</strong> PhD students,
+          <strong>2027</strong> Master's students
+          (ideally starting from the final year of their undergraduate degree),
+          and <strong>2026</strong> research assistants, postdoctoral fellows,
+          and hardware/software engineers on the following projects:
+        </p>
+        <ul>
+          <li>LLM-aided hardware development</li>
+          <li>(Micro-)architecture for safety-critical out-of-order processors</li>
+          <li>(Micro-)architecture for lightweight LLM accelerators</li>
+        </ul>
+        <p style="margin: 10px 0 0 0;">
+          Interested? Please <a href="mailto:zhejiang.arch@gmail.com"><strong>email me</strong></a>
+          with your CV and a short statement of interest.
+        </p>
+      </div>
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Research Vision</heading>
-              <p> The capabilities of the computing systems have grown rapidly in the last decade, driven by the ground-breaking research explored in academia (e.g., machine learning) and the extensive validation performed in industry (e.g., simulations and real-world tests).
-                  It is optimistically predicted that in the near future many emerging life-critical systems (e.g., self-driving vehicles health-check robots) will be deployed around us to greatly improve our life quality.</p>
-              <p>However, before this vision can be realised, a crucial challenge lies in ensuring the <strong>reliable safety assurance</strong> of these computing systems. My research is deeply rooted in this promising direction. Over the past decade, I have collaborated with numerous researchers and engineers from both academia and industry to develop <strong>safety-critical hardware</strong> for next-generation computing systems. This includes everything from individual <strong>hardware elements</strong> (e.g., processors, interconnects, Input/Outputs (I/Os), etc.) to entire <strong>System-on-Chips (SoCs)</strong>. I have adopted a highly practical approach to my research, focusing on the development of new architectures, hardware engineering methodologies, and tool support that facilitate automated safety and performance analysis of hardware design. This guides engineers in enhancing performance while ensuring safety and security. My work has been validated through real-time theory and extensive experimental evaluations in both laboratory and industrial settings. Furthermore, my research outputs have been successfully implemented in various industrial products. For a detailed research statement, please <a href="mailto:zhejiang.arch@gmail.com">email me</a>.</p>
+      <p class="note">
+        Please also visit my friend Prof.&nbsp;<a href="https://wrwei.github.io/" rel="noopener">Ran&nbsp;Wei</a>'s
+        homepage &mdash; we collaborate closely, and even his homepage bears a striking resemblance to mine.
+      </p>
+    </section>
 
-          </td>
-        </tr>
-      </tbody></table>
+    <!-- ============== Short Bio ======================================== -->
+    <section class="section">
+      <h2 class="section__title">Short biography</h2>
+      <p>
+        I am an academic faculty member working on computer architecture, micro-architectural
+        safety and security, timing-critical systems, and LLM-based design automation. My career
+        to date:
+      </p>
 
-      <script data-goatcounter="https://zhejiang7777.goatcounter.com/count"
-      async src="//gc.zgo.at/count.js"></script>
-    
+      <ul class="bio">
+        <li>
+          <span class="bio__role">Academic Faculty</span>
+          <span class="bio__period">2024&ndash;present</span>
+          <span class="bio__where">
+            <a href="https://www.seu.edu.cn/english/main.htm" rel="noopener">School of Integrated Circuits</a>,
+            <a href="https://www.seu.edu.cn/english/main.htm" rel="noopener">Southeast University</a>, Nanjing, China.
+          </span>
+          <span class="bio__detail">
+            Leading a research group on the architecture and micro-architecture of safety- and
+            security-critical processors, lightweight LLM accelerators, and LLM-aided hardware
+            design automation.
+          </span>
+        </li>
+
+        <li>
+          <span class="bio__role">Postdoctoral Scholar</span>
+          <span class="bio__period">2021&ndash;2024</span>
+          <span class="bio__where">
+            <a href="https://www.cl.cam.ac.uk/research/comparch/" rel="noopener">Computer Architecture Group</a>,
+            <a href="https://www.cst.cam.ac.uk" rel="noopener">Department of Computer Science and Technology</a>,
+            <a href="https://www.cam.ac.uk" rel="noopener">University of Cambridge</a>, United Kingdom.
+          </span>
+          <span class="bio__detail">
+            Worked with <a href="https://www.cl.cam.ac.uk/~tmj32/" rel="noopener">Timothy M. Jones</a> and
+            <a href="https://samainsworth.github.io" rel="noopener">Sam Ainsworth</a> on micro-architectural
+            support for the security and reliability of out-of-order superscalar processors.
+          </span>
+        </li>
+
+        <li>
+          <span class="bio__role">Design Engineer</span>
+          <span class="bio__period">2020&ndash;2022</span>
+          <span class="bio__where">
+            Department of Central Engineering, <a href="https://www.arm.com" rel="noopener">Arm</a>, United Kingdom.
+          </span>
+          <span class="bio__detail">
+            Worked on the architecture and micro-architecture of server System-on-Chips (SoCs).
+            Our team successfully delivered several many-core (128- and 256-core) SoCs based on
+            <a href="https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-n2" rel="noopener">Neoverse</a>
+            processors (<a href="https://www.arm.com/architecture/learn-the-architecture/a-profile" rel="noopener">Armv9</a>),
+            including <em>Genesis</em> (5&nbsp;nm) and <em>Bravo</em> (3&nbsp;nm) for Microsoft's and ByteDance's data centres.
+          </span>
+        </li>
+
+        <li>
+          <span class="bio__role">Safety Architect</span>
+          <span class="bio__period">2018&ndash;2020</span>
+          <span class="bio__where">
+            Functional Safety Competency Centre (FSCC), <a href="https://www.renesas.com/" rel="noopener">Renesas Electronics</a>, United Kingdom.
+          </span>
+          <span class="bio__detail">
+            Worked on the architecture and safety architecture of automotive micro-controllers.
+            Our team successfully delivered several
+            <a href="https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level" rel="noopener">ASIL</a>-D
+            micro-controllers for Bosch's and Denso's ECUs, including
+            <a href="https://www.renesas.com/in/en/products/microcontrollers-microprocessors/rh850-automotive-mcus/rh850u2a16-automotive-microcontrollers-features-four-400mhz-cpu-cores-dual-core-lock-step-structure-coming-soon" rel="noopener">RH850/U216 (28&nbsp;nm)</a>
+            &mdash;
+            <a href="https://www.renesas.com/us/en/about/press-room/renesas-electronics-accelerates-automotive-ecu-integration-worlds-first-28nm-cross-domain-flash-mcu" rel="noopener">the <strong>world's first</strong> 28&nbsp;nm cross-domain MCU featuring virtualisation</a>.
+          </span>
+        </li>
+
+        <li>
+          <span class="bio__role">PhD Student</span>
+          <span class="bio__period">2014&ndash;2018</span>
+          <span class="bio__where">
+            <a href="https://www.cs.york.ac.uk/rts/" rel="noopener">Real-Time Systems Group</a>,
+            <a href="https://www.cs.york.ac.uk" rel="noopener">Department of Computer Science</a>,
+            <a href="https://www.york.ac.uk" rel="noopener">University of York</a>, United Kingdom.
+          </span>
+          <span class="bio__detail">
+            Supervised by <a href="https://scholar.google.com/citations?user=VRCt1_0AAAAJ&amp;hl=en" rel="noopener">Neil Audsley</a>
+            on the architecture and micro-architecture of real-time Networks-on-Chip and
+            input/output (I/O) sub-systems
+            &nbsp;[<a href="https://etheses.whiterose.ac.uk/22608/1/Thesis_Final_V4.pdf" rel="noopener">Thesis: Real-Time I/O System for Many-core Embedded Systems</a>].
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============== Research Vision =================================== -->
+    <section class="section">
+      <h2 class="section__title">Research vision</h2>
+      <p>
+        The capabilities of computing systems have grown rapidly over the past decade, driven by
+        ground-breaking research in academia (e.g., machine learning) and extensive validation in
+        industry (e.g., simulations and real-world tests). It is optimistically predicted that, in
+        the near future, many emerging life-critical systems &mdash; such as self-driving vehicles
+        and health-care robots &mdash; will be deployed around us, greatly improving our quality of life.
+      </p>
+      <p>
+        Before this vision can be realised, however, a crucial challenge remains: ensuring the
+        <strong>reliable safety assurance</strong> of these computing systems. My research is rooted
+        in this direction. Over the past decade, I have collaborated with numerous researchers and
+        engineers from both academia and industry to develop <strong>safety-critical hardware</strong>
+        for next-generation computing systems &mdash; from individual <strong>hardware elements</strong>
+        (processors, interconnects, I/Os, etc.) to entire <strong>System-on-Chips (SoCs)</strong>.
+        I take a highly practical approach, focusing on new architectures, hardware-engineering
+        methodologies, and tool support that enable automated safety and performance analysis of
+        hardware designs. This guides engineers in enhancing performance while ensuring safety and
+        security. My work has been validated through real-time theory and through extensive
+        experimental evaluation in both laboratory and industrial settings, and several outputs have
+        been adopted in industrial products. For a detailed research statement, please
+        <a href="mailto:zhejiang.arch@gmail.com">email me</a>.
+      </p>
+    </section>
+
+    <!-- ============== Footer =========================================== -->
+    <footer class="footer">
+      <div>&copy; Zhe Jiang &middot; School of Integrated Circuits, Southeast University.</div>
+      <div>Layout inspired by <a href="https://jonbarron.info/" rel="noopener">Jon Barron's template</a>.</div>
+    </footer>
+
+  </main>
+
+  <script data-goatcounter="https://zhejiang7777.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
 </body>
-            <p align="right">
-              <font size="2">
-                Cloned from <a href="https://jonbarron.info/"> here</a>
-              </font>
-            </p>
-
 </html>
