@@ -535,30 +535,23 @@ sub      { bottom: -0.25em; }
   border-bottom-color: var(--c-rule);
 }
 
+/* Author list.
+   Each author is wrapped in <span class="au">…</span> and separators (", "
+   / ", and " / " and ") are real HTML text inside <span class="sep">…</span>
+   tags between authors. This keeps the separators completely outside the
+   highlighted .au.me element, so there is no way for the "Zhe Jiang" styling
+   (bold + underline) to ever bleed onto "and". */
 .pub__authors {
   color: var(--c-text);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-top: 4px;
 }
-/* Each author is wrapped in a non-breaking span; CSS supplies the separator
-   so long names never wrap mid-name. The last author is joined with "and"
-   (3+ authors get the Oxford comma; 2 authors get a plain " and "). The
-   separator is attached to the PREVIOUS sibling via ::after so the styling
-   of the last author (e.g. the highlight on .au.me) never bleeds onto the
-   "and". */
 .pub__authors .au { white-space: nowrap; }
-.pub__authors .au + .au::before { content: ", "; white-space: normal; }
-/* 3+ authors: put ", and " after the second-to-last author and suppress the
-   default ", " before the last author. */
-.pub__authors .au:has(+ .au:last-child)::after { content: ", and"; white-space: normal; }
-.pub__authors .au:has(+ .au:last-child) + .au:last-child::before { content: " "; }
-/* 2 authors: put " and " after the first author and suppress its default
-   (empty) ::before; the single-child case yields nothing so singletons are
-   unaffected. */
-.pub__authors .au:first-child:has(+ .au:last-child)::after { content: " and"; white-space: normal; }
-.pub__authors .au:first-child:has(+ .au:last-child) + .au:last-child::before { content: " "; }
-.pub__authors .au.me {
+.pub__authors .sep { font-weight: 400; white-space: normal; }
+/* Highlight the literal name "Zhe Jiang" (the inner .name span) with bold
+   and a subtle underline. Nothing else is affected. */
+.pub__authors .au.me .name {
   font-weight: 700;
   color: var(--c-text);
   text-decoration: underline;
