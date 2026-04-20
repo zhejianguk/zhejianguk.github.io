@@ -130,6 +130,9 @@
   --c-paper:     #111827;     /* near-black slate for paper titles */
   --c-paper-h:   #0b3666;     /* deep navy for paper title hover */
   --c-mark:      #fef3c7;
+  --c-venue-chip:    #163a63; /* dark academic blue */
+  --c-venue-chip-bg: #eef4fb; /* light blue wash */
+  --c-venue-chip-br: #a9c2df; /* clear blue border */
   --c-news:      #b91c1c;     /* red-700 — recruiting / announcements */
   --c-news-strong:#991b1b;    /* red-800 — emphasis text inside callout */
   --c-news-bg:   #fef2f2;     /* red-50  — soft red wash for callout */
@@ -397,6 +400,12 @@ sub      { bottom: -0.25em; }
   border: 1px solid var(--c-rule);
   vertical-align: 1px;
   white-space: nowrap;
+}
+
+.pub__venue .chip {
+  color: var(--c-venue-chip);
+  background: var(--c-venue-chip-bg);
+  border-color: var(--c-venue-chip-br);
 }
 /* ---------- Recruiting callout ----------------------------------------- */
 .callout {
