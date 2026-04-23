@@ -541,6 +541,55 @@ a.bio__org:focus-visible::before {
 .bio__where { display: block; margin-top: 2px; color: var(--c-muted); font-size: 0.95rem; }
 .bio__detail { display: block; margin-top: 6px; color: var(--c-text); font-size: 0.97rem; }
 
+/* ---------- Academic service table ------------------------------------- */
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+  margin-top: 12px;
+}
+.service-table thead th {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-soft);
+  padding: 6px 10px 8px 0;
+  border-bottom: 1px solid var(--c-border);
+  text-align: left;
+}
+.service-table tbody tr {
+  border-bottom: 1px dashed var(--c-border);
+}
+.service-table tbody tr:last-child {
+  border-bottom: none;
+}
+.service-table tbody td {
+  padding: 9px 10px 9px 0;
+  vertical-align: middle;
+  color: var(--c-text);
+}
+.service-table tbody td:first-child {
+  white-space: nowrap;
+  width: 1%;
+}
+.service-table tbody td:nth-child(2) {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--c-muted);
+}
+.service-table tbody td:last-child {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--c-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.service-table .service-table__venue { width: 1%; }
+.service-table .service-table__years { width: 1%; }
+
 /* ---------- Publications (list) ---------------------------------------- */
 .year-nav {
   display: flex;
