@@ -942,6 +942,12 @@ a.bio__org:focus-visible::before {
 }
 .mentor-card__name a { color: var(--c-accent); }
 .mentor-card__name a:hover { color: var(--c-hover); text-decoration: none; }
+.mentor-card__title {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--c-soft);
+  margin: 2px 0 0 0;
+}
 .mentor-card__role {
   font-family: var(--font-sans);
   font-size: 0.8rem;
