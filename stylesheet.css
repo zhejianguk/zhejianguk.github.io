@@ -1132,35 +1132,73 @@ a.bio__org:focus-visible::before {
   .hero__role { text-align: center; }
   .hero__links { justify-content: center; }
 
-  .research-triangle__canvas { min-height: 465px; }
-  .research-triangle__node { width: calc(50% - 6px); }
-  .research-triangle__node--architecture {
-    width: 220px;
-    max-width: calc(100% - 24px);
+  /* The desktop triangle becomes a linear research flow on narrow screens.
+     Keeping the labels at normal reading sizes is more useful than preserving
+     the triangular geometry on a small viewport. */
+  .research-triangle { margin: 22px 0 30px 0; }
+  .research-triangle__canvas {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
   }
-  .research-triangle__node--development { right: 0; }
-  .research-triangle__node--microarchitecture { left: 0; }
-  .research-triangle__node h3 { font-size: 0.78rem; }
+  .research-triangle__outline,
+  .research-triangle__interface {
+    display: none;
+  }
+  .research-triangle__node,
+  .research-triangle__node--architecture,
+  .research-triangle__node--microarchitecture,
+  .research-triangle__node--development {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: none;
+    padding: 14px 16px;
+    transform: none;
+    border: 1px solid var(--c-rule);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    text-align: left;
+  }
+  .research-triangle__node::after {
+    content: "\2193";
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translateX(-50%);
+    color: var(--c-soft);
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+  .research-triangle__node h3 {
+    margin-bottom: 4px;
+    font-size: 0.96rem;
+    line-height: 1.35;
+  }
   .research-triangle__node p {
-    font-size: 0.72rem;
-    line-height: 1.4;
+    font-size: 0.88rem;
+    line-height: 1.5;
   }
   .research-triangle__objective {
-    top: 50%;
-    width: 140px;
-    padding: 12px;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: auto;
+    padding: 16px;
+    transform: none;
+    border-radius: var(--radius);
+    background: var(--c-bg);
   }
-  .research-triangle__objective strong { font-size: 0.74rem; }
-  .research-triangle__objective small { font-size: 0.52rem; }
-  .research-triangle__interface { font-size: 0.55rem; }
-  .research-triangle__interface--contracts {
-    top: 38%;
-    left: 14%;
+  .research-triangle__objective strong {
+    font-size: 0.94rem;
+    line-height: 1.4;
   }
-  .research-triangle__interface--rtl { top: 76%; }
-  .research-triangle__interface--evidence {
-    top: 38%;
-    left: 86%;
+  .research-triangle__objective small {
+    margin-top: 5px;
+    font-size: 0.7rem;
+    line-height: 1.4;
   }
 
   .topnav__inner { padding: 12px 18px; gap: 14px; }
