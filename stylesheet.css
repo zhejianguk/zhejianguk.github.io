@@ -386,6 +386,119 @@ sub      { bottom: -0.25em; }
   letter-spacing: -0.015em;
 }
 
+/* ---------- Research programme ----------------------------------------- */
+.research-triangle {
+  margin: 22px 0 28px 0;
+  overflow: visible;
+}
+.research-triangle__canvas {
+  position: relative;
+  min-height: 440px;
+}
+.research-triangle__outline {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: visible;
+}
+.research-triangle__edge {
+  fill: none;
+  stroke: #64748b;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+.research-triangle__arrowhead { fill: #64748b; }
+.research-triangle__node {
+  position: absolute;
+  z-index: 2;
+  width: 245px;
+  text-align: center;
+}
+.research-triangle__node--architecture {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.research-triangle__node--development {
+  right: 0;
+  bottom: 0;
+}
+.research-triangle__node--microarchitecture {
+  bottom: 0;
+  left: 0;
+}
+.research-triangle__node h3 {
+  margin: 0 0 5px 0;
+  color: var(--c-accent-2);
+  font-family: var(--font-sans);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.research-triangle__node p {
+  margin: 0;
+  color: var(--c-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.research-triangle__objective {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 170px;
+  aspect-ratio: 1 / 1;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--c-accent);
+  border-radius: 50%;
+  color: var(--c-text);
+  text-align: center;
+  font-family: var(--font-sans);
+}
+.research-triangle__objective strong {
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+.research-triangle__objective small {
+  margin-top: 8px;
+  color: var(--c-soft);
+  font-size: 0.58rem;
+  line-height: 1.35;
+}
+.research-triangle__interface {
+  position: absolute;
+  z-index: 2;
+  color: var(--c-soft);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.research-triangle__interface--contracts {
+  top: 40%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+.research-triangle__interface--rtl {
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.research-triangle__interface--evidence {
+  top: 40%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+}
+
 /* ---------- Tag / chip / badge primitives ------------------------------ */
 .chip {
   display: inline-block;
@@ -451,6 +564,7 @@ sub      { bottom: -0.25em; }
 }
 .callout li { margin: 3px 0; }
 .callout li::marker { color: var(--c-news); }
+.callout__contact { margin: 10px 0 0 0; }
 
 /* ---------- Biography timeline ----------------------------------------- */
 .bio { margin: 0; padding: 0; list-style: none; }
@@ -990,6 +1104,17 @@ a.bio__org:focus-visible::before {
 
 /* ---------- Helpers ----------------------------------------------------- */
 .note { color: var(--c-soft); font-size: 0.9rem; font-family: var(--font-sans); }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ---------- Responsive -------------------------------------------------- */
 @media (max-width: 760px) {
@@ -1006,6 +1131,37 @@ a.bio__org:focus-visible::before {
   .hero__name { font-size: 1.95rem; text-align: center; }
   .hero__role { text-align: center; }
   .hero__links { justify-content: center; }
+
+  .research-triangle__canvas { min-height: 465px; }
+  .research-triangle__node { width: calc(50% - 6px); }
+  .research-triangle__node--architecture {
+    width: 220px;
+    max-width: calc(100% - 24px);
+  }
+  .research-triangle__node--development { right: 0; }
+  .research-triangle__node--microarchitecture { left: 0; }
+  .research-triangle__node h3 { font-size: 0.78rem; }
+  .research-triangle__node p {
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+  .research-triangle__objective {
+    top: 50%;
+    width: 140px;
+    padding: 12px;
+  }
+  .research-triangle__objective strong { font-size: 0.74rem; }
+  .research-triangle__objective small { font-size: 0.52rem; }
+  .research-triangle__interface { font-size: 0.55rem; }
+  .research-triangle__interface--contracts {
+    top: 38%;
+    left: 14%;
+  }
+  .research-triangle__interface--rtl { top: 76%; }
+  .research-triangle__interface--evidence {
+    top: 38%;
+    left: 86%;
+  }
 
   .topnav__inner { padding: 12px 18px; gap: 14px; }
   .topnav__links { gap: 16px; font-size: 0.86rem; }
