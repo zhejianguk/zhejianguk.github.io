@@ -843,7 +843,6 @@ a.bio__org:focus-visible::before {
 .pub__badges {
   margin-top: 10px;
   font-family: var(--font-sans);
-  font-size: 0.92rem;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -851,23 +850,54 @@ a.bio__org:focus-visible::before {
 .pub__badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px 4px 10px;
-  border-radius: 4px;
-  font-weight: 500;
-  line-height: 1.4;
-  border: 1px solid var(--c-border);
-  border-left-width: 4px;
-  background: var(--c-surface);
-  color: var(--c-text);
-}
-/* A thin coloured left edge carries the meaning; the rest of the pill stays
-   in a neutral surface so the text is the primary visual. */
-.pub__badge--award {
-  border-left-color: #b45309;   /* amber-700 */
+  gap: 7px;
+  max-width: 100%;
+  padding: 5px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.8rem;
   font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
 }
+
+/* Award winners and outstanding papers use a high-contrast academic navy,
+   set off by a restrained gold star. */
+.pub__badge--award {
+  color: #f8fafc;
+  background: linear-gradient(135deg, #1e466f 0%, #122f50 100%);
+  border-color: #0f2947;
+}
+.pub__badge--award::before {
+  content: "\2605";
+  color: #fbbf24;
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+/* Candidates remain celebratory, but visually distinct from award winners. */
+.pub__badge--candidate {
+  color: #5c3b00;
+  background: linear-gradient(135deg, #fff4c7 0%, #fffbeb 100%);
+  border-color: #d6a32a;
+}
+.pub__badge--candidate::before {
+  color: #a16207;
+}
+
+/* Milestone notes use a quieter blue treatment so awards retain priority. */
 .pub__badge--note {
-  border-left-color: #1d4ed8;   /* blue-700 */
+  color: #173d75;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  box-shadow: none;
+}
+.pub__badge--note::before {
+  content: "\2022";
+  color: #2563eb;
+  font-size: 0.72rem;
+  line-height: 1;
 }
 
 /* ---------- Group page -------------------------------------------------- */
