@@ -850,54 +850,75 @@ a.bio__org:focus-visible::before {
 .pub__badge {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 9px;
   max-width: 100%;
-  padding: 5px 12px;
+  padding: 6px 12px 6px 7px;
   border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 0.8rem;
+  border-radius: 7px;
+  font-size: 0.81rem;
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: 0.01em;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
 }
 
-/* Award winners and outstanding papers use a high-contrast academic navy,
-   set off by a restrained gold star. */
+/* A small medallion gives every recognition a clear visual anchor without
+   forcing longer messages into an oversized capsule. */
+.pub__badge::before {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-style: normal;
+  line-height: 1;
+}
+
+/* Award winners and outstanding papers use a warm, restrained gold surface. */
 .pub__badge--award {
-  color: #f8fafc;
-  background: linear-gradient(135deg, #1e466f 0%, #122f50 100%);
-  border-color: #0f2947;
+  color: #49370b;
+  background: linear-gradient(135deg, #fff9e8 0%, #fffdf7 100%);
+  border-color: #e6d39a;
 }
 .pub__badge--award::before {
   content: "\2605";
-  color: #fbbf24;
-  font-size: 0.82rem;
-  line-height: 1;
+  color: #fffaf0;
+  background: #8a6814;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 /* Candidates remain celebratory, but visually distinct from award winners. */
 .pub__badge--candidate {
-  color: #5c3b00;
-  background: linear-gradient(135deg, #fff4c7 0%, #fffbeb 100%);
-  border-color: #d6a32a;
+  color: #5b4205;
+  background: #fffdf7;
+  border-color: #ead9a8;
 }
 .pub__badge--candidate::before {
-  color: #a16207;
+  color: #8a6814;
+  background: #fff4c7;
+  box-shadow: inset 0 0 0 1px #dfbd55;
 }
 
-/* Milestone notes use a quieter blue treatment so awards retain priority. */
+/* Milestone notes use a quiet editorial treatment: readable as a sentence,
+   while the blue spark keeps them recognisable at a glance. */
 .pub__badge--note {
-  color: #173d75;
-  background: #eff6ff;
-  border-color: #bfdbfe;
+  color: #334155;
+  background: linear-gradient(135deg, #f8fafc 0%, #f3f7fb 100%);
+  border-color: #d9e3ed;
+  font-family: var(--font-serif);
+  font-size: 0.84rem;
+  font-weight: 400;
+  font-style: italic;
   box-shadow: none;
 }
 .pub__badge--note::before {
-  content: "\2022";
-  color: #2563eb;
-  font-size: 0.72rem;
-  line-height: 1;
+  content: "\2726";
+  color: #244f76;
+  background: #e4eef8;
+  box-shadow: inset 0 0 0 1px #c5d8ea;
 }
 
 /* ---------- Group page -------------------------------------------------- */
